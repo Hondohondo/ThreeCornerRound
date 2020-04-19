@@ -24,3 +24,72 @@ body {
     margin: 0 auto;
 }
 
+header {
+    /*background-image: url(img/hero1.jpg);*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    /*height: 120vh;*/
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 120rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    margin-bottom: 2rem;
+    color: #fff;
+    font-size: 4.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 20rem;
+
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #27ae60;
+    border: 1px solid #27ae60;
+    color: #fff;
+    margin-right: 1.5rem;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited
+{
+    border: 1px solid #27ae60;
+    color: #27ae60;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #219251;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #27ae60;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active
+{
+    border: 1px solid #27ae60;
+    color: #fff;
+}
