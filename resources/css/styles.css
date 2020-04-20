@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,300;0,400;1,300&display=swap');
 
+/*Nephritis Color: #27ae60;*/
+
+/*---------------------------------------*/
+/*BASIC SETUP*/
+/*---------------------------------------*/
 * {
     padding: 0;
     margin: 0;
@@ -18,28 +23,17 @@ html {
 body {
     font-size: 2rem;
 }
-
+/*---------------------------------------*/
+/*REUSABLE COMPONENTS*/
+/*---------------------------------------*/
 .row {
     max-width: 120rem;
     margin: 0 auto;
 }
 
-header {
-    /*background-image: url(img/hero1.jpg);*/
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero1.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    /*height: 120vh;*/
-}
-
-.hero-text-box {
-    position: absolute;
-    width: 120rem;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+/*---------------------------------------*/
+/*HEADINGS*/
+/*---------------------------------------*/
 
 h1 {
     margin-bottom: 2rem;
@@ -51,6 +45,9 @@ h1 {
     word-spacing: 4px;
 }
 
+/*---------------------------------------*/
+/*BUTTONS*/
+/*---------------------------------------*/
 .btn:link,
 .btn:visited {
     display: inline-block;
@@ -92,4 +89,66 @@ h1 {
 {
     border: 1px solid #27ae60;
     color: #fff;
+}
+
+/*---------------------------------------*/
+/*HEADER*/
+/*---------------------------------------*/
+header {
+    /*background-image: url(img/hero1.jpg);*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero1.jpg);
+    background-size: cover;
+    background-position: center;
+    /*height: 100vh;*/
+    height: 120vh;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 120rem;
+    /*top: 50%;*/
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2.5rem;
+}
+
+.logo {
+    height: 10rem;
+    width: auto;
+}
+
+.main-nav {
+    list-style: none;
+
+}
+
+.main-nav li {
+    /*display: inline-block;*/
+    /*margin-top: 4rem;*/
+    margin-bottom: 2rem;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited
+{
+    padding: 0 8px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    border-left: 10rem solid transparent;
+    transition: border-left 0.2s;
+}
+.main-nav li a:hover,
+.main-nav li a:active
+{
+    border-left: 10rem solid #27ae60;
+
 }
