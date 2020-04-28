@@ -3,6 +3,20 @@
 /*Nephritis Color: #27ae60;*/
 
 /*---------------------------------------*/
+/*UTILITY CLASSES*/
+/*---------------------------------------*/
+.mb-sm {margin-bottom: 2rem}
+.mb-md {margin-bottom: 4rem}
+.mb-lg {margin-bottom: 6rem}
+.mb-hg {margin-bottom: 8rem}
+.mb-hg-2 {margin-bottom: 10rem}
+
+.mt-sm {margin-top: 2rem}
+.mt-md {margin-top: 4rem}
+.mt-lg {margin-top: 6rem}
+.mt-hg {margin-top: 8rem}
+
+/*---------------------------------------*/
 /*BASIC SETUP*/
 /*---------------------------------------*/
 * {
@@ -22,6 +36,7 @@ html {
 
 body {
     font-size: 2rem;
+
 }
 /*---------------------------------------*/
 /*REUSABLE COMPONENTS*/
@@ -160,7 +175,7 @@ header {
     transform: scaleX(0);
     transform-origin: right;
 
-    transition: transform 1s;
+    transition: transform 0.4s;
 }
 
 .main-nav li:hover::before {
@@ -171,15 +186,68 @@ header {
 .main-nav li a:visited
 {
     padding: 0 8px;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.55);
     text-decoration: none;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     font-size: 1.8rem;
     /*border-left: 10rem solid transparent;*/
-    /*transition: border-left 0.2s;*/
+    transition: color 0.2s;
 }
 .main-nav li a:hover,
 .main-nav li a:active
 {
+    color: #fff;
     /*border-left: 10rem solid #27ae60;*/
+}
+
+
+section {
+    padding: 8rem 0;
+}
+/*---------------------------------------*/
+/* SECTION ONE*/
+/*---------------------------------------*/
+.section-container {
+    display: flex;
+    margin-top: -20vh;
+}
+
+.trc-image-1 {
+    width: 110%;
+}
+
+.text-block {
+    /*display: flex;*/
+    box-shadow: 1px 2px 1px rgba(0,0,0,.1);
+    border-radius: 5px;
+    background-color: #fff;
+
+    padding: 7rem 4rem;
+    z-index: 5;
+    /*flex: 0 0 60%;*/
+    height: 60rem;
+}
+
+.text {
+    width: 50%;
+    /*text-align: right;*/
+    margin-left: 50%;
+}
+.paragraph {
+    line-height: 1.6;
+}
+h2 {
+    margin-bottom: 2rem;
+}
+
+
+.illustration-1 {
+    width: 150%;
+}
+
+
+.picture-block {
+    margin-top: 40vh;
+    margin-right: -25rem;
+    z-index: 10;
 }
