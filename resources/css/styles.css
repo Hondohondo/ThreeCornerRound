@@ -251,3 +251,23 @@ h2 {
     margin-right: -25rem;
     z-index: 10;
 }
+
+.section-two {padding: 4rem 0;}
+
+.mission-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading-block {flex: 0 0 20%;}
+
+.heading-block h3 {
+    font-size: 60rem;
+    line-height: 0.8;
+
+    background: url("../img/hero2.jpg");
+    background-size: cover;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
