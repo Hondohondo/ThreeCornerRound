@@ -212,6 +212,11 @@ section {
     margin-top: -20vh;
 }
 
+.trc-video {
+    width: 64rem;
+    height: 36rem;
+}
+
 .trc-image-1 {
     width: 110%;
 }
@@ -226,13 +231,16 @@ section {
     padding: 7rem 4rem;
     z-index: 5;
     /*flex: 0 0 60%;*/
-    height: 60rem;
+    /*height: 60rem;*/
+    height: 55rem;
 }
 
 .text {
-    width: 50%;
+    /*width: 50%;*/
+    width: 55%;
     /*text-align: right;*/
-    margin-left: 50%;
+    /*margin-left: 50%;*/
+    margin-left: 40%;
 }
 .paragraph {
     line-height: 1.6;
@@ -265,10 +273,13 @@ h2 {
 }
 .text-block-reverse {
 
+    /*padding: 7rem 4rem;*/
+    /*z-index: 5;*/
+    height: 50rem;
 }
 
 .text-reverse {
-    width: 50%;
+    width: 55%;
     /*text-align: right;*/
     margin-left: 0;
 }
@@ -375,7 +386,7 @@ section.section-two {
 
 .gallery {
     display: flex;
-    height: 15rem;
+    height: 17rem;
     overflow: hidden;
 }
 .gallery__photo {
